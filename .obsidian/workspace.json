@@ -11,11 +11,28 @@
             "id": "c2bff13b29a5fa4b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Backups.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ce526e369659361",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Surveillance.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Surveillance.md"
+              }
             }
           }
         ]
@@ -138,6 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2bff13b29a5fa4b",
-  "lastOpenFiles": []
+  "active": "9ce526e369659361",
+  "lastOpenFiles": [
+    "Backups.md",
+    "Surveillance.md"
+  ]
 }
