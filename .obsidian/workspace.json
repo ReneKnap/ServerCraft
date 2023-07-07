@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Backups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ce526e369659361",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "FileHosting.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,11 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ce526e369659361",
+  "active": "c2bff13b29a5fa4b",
   "lastOpenFiles": [
     "Backups.md",
+    "ServerOS.md",
     "FileHosting.md",
-    "Surveillance.md",
-    "ServerOS.md"
+    "Surveillance.md"
   ]
 }

@@ -1,6 +1,8 @@
 ## UseCase
 Es sollte möglich sein Datein von bestimmten Ordnern des NAS zu und von (2-way-sync) bestimmten Endgeräten zu syncen. Das sollte möglich sein, ohne smb, ftp oder sonstiges nativ verwenden zu müssen, um entsprechenden Komfort zu erzeugen. Daten die alltäglich und sofort zwischen Geräten gesynced werden müssen sollten dediziert behandelt werden.
 
+Falls direkt auf freigegebene Ordner zugegriffen werden soll, ohne diese direkt zu syncen - und somit auf dem Endgeräte gespeichert zu haben - bietet es sich an per smb oder FTP auf den Server zuzugreifen. So wird keine weitere FileHosting App nur für den Zugriff auf Dateien benötigt. Dafür gibt es auch in iOS oder Android mehrere Möglichkeiten und ist somit die einfachste Möglichkeit hierfür. Dieser Zugriff kann zudem durch ein VPN stattfinden, sodass dieser Dienst nicht direkt öffentlich verfügbar sein muss.
+
 ## Möglichkeiten
 
 - **syncthing** (z.B. [https://github.com/syncthing/syncthing/blob/main/README-Docker.md](https://github.com/syncthing/syncthing/blob/main/README-Docker.md "smartCard-inline") )
@@ -118,10 +120,10 @@ services:
 
 - **Nextcloud** (z.B. [https://www.wundertech.net/how-to-install-nextcloud-on-unraid/](https://www.wundertech.net/how-to-install-nextcloud-on-unraid/ "smartCard-inline") )
   Nextcloud bietet zusätzlich zum File Hosting viele andere Features wie Kalender, VideoChat, Mailing, ... Dadurch und durch die aktuelle Entwicklungsphilosophie kann Nextcloud zum Teil instabil laufen oder sich gar durch Updates komplett zerstören. Der Container muss dann neu aufgesetzt werden.
-  Nextcloud erzeugt eine eigene Dateiumgebung in einem spezifizierten Pfad. Alle Dateien müssen dort liegen, oder das Dockersetup muss angepasst werden
+  Nextcloud erzeugt eine eigene Dateiumgebung in einem spezifizierten Pfad. Alle Dateien müssen dort liegen, oder das Dockersetup muss angepasst werden.
   <span style="color: yellow;">Information</span>: symlinks funktionieren nicht, um Ordner zu Nextcloud hinzuzufügen! ([https://help.nextcloud.com/t/symlink-inside-data-folder-seems-not-to-work/5973?source\_topic\_id=25877](https://help.nextcloud.com/t/symlink-inside-data-folder-seems-not-to-work/5973?source_topic_id=25877 "‌"))
   <span style="color: yellow;">Information</span>: Um externe Ordner zu Nextcloud hinzuzufügen, und damit keine Datein im Docker Volumes Ordner zu hosten (könnte Problematisch sein da Docker Dateien dort löschen kann) kann der entsprechende externe Ordner in der Docker Compose File als Volume gemounted werden und muss dann als External Storage über die App External Storage hinzugefügt werden.
-  <span style="color: red;">Problem</span>: Nextcloud erzeugt eine Database zur Bereitstellung der Dateien die Nextcloud hinzugefügt wurden. Dadurch muss ein Scan durchgeführt werden falls Dateien NICHT durch Nextcloud auf den Server kopiert werden sollen. In Dockerumgebung kann der Command so aussehen: `sudo docker exec -ti --user www-data nextcloud-app /var/www/html/occ files:scan --all`
+  <span style="color: yellow;">Information</span>: Nextcloud erzeugt eine Database zur Bereitstellung der Dateien die Nextcloud hinzugefügt wurden. Dadurch muss ein Scan durchgeführt werden falls Dateien NICHT durch Nextcloud auf den Server kopiert werden sollen. In Dockerumgebung kann der Command so aussehen: `sudo docker exec -ti --user www-data nextcloud-app /var/www/html/occ files:scan --all`
   Beispiel Docker Compose file für Nextcloud:
 ```
 version: '2'

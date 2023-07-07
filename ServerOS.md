@@ -1,6 +1,5 @@
 ## Möglichkeiten
 proxmox:
-
 - kostenlos
 - bietet deutlich bessere Features für Virtualisierung als z.B. unraid (Snapshots, Backup, Passthrough, ...)
 - unraid oder trueNAS könnten als VM laufen, um ein NAS aufzusetzen. (am besten mit PCIe Passthrough einer HBA SATA-Erweiterungskarte). Hierfür muss eine HBA-Karte für SATA-Erweiterung genutzt werden, um z.B. unraid sinnvoll zu nutzen.
@@ -8,13 +7,11 @@ proxmox:
 
 
 TrueNAS:
-
 - kostenlos
 - evtl. höherer Stromverbrauch, da kein dedizierter idle der HDDs durch ZFS.
 - ‌
 
 unraid:
-
 - Falls gewollt: ZFS support ist ab aktueller Version auch verfügbar.
 
 Lizenz mit bis zu 6 Festplatten (60€)
