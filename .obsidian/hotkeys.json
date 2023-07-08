@@ -1,1 +1,10 @@
-{}
+{
+  "colored-text:get-color-input": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F1"
+    }
+  ]
+}

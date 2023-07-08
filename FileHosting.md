@@ -7,6 +7,7 @@ Falls direkt auf freigegebene Ordner zugegriffen werden soll, ohne diese direkt 
 
 - **syncthing** (z.B. [https://github.com/syncthing/syncthing/blob/main/README-Docker.md](https://github.com/syncthing/syncthing/blob/main/README-Docker.md "smartCard-inline") )
   syncthing ist ein Tool das lediglich FileSyncing zwischen Geräten bietet. Es können Ordner und Endgeräte einfach hinzugefügt werden. Das syncing erfolgt nach einem einstellbaren Zeitplan. Außerdem können die Dateien versioniert werden falls gewollt. Dateien liegen hier entsprechend ohne Komprimierung auf dem Volume und syncthing agiert lediglich mit diesen. syncthing muss nicht aktiv getriggert werden, um Dateien zu scannen. Einen direkten Zugriff auf Daten auf dem Server kann durch unraid unproblematisch über smb realisiert werden. Diese Lösung ist also sehr lean und mit minimalem Einfluss auf die Daten an sich.
+  <span style="color: yellow;">Information</span>: Für iOS gibt es keine App von syncthing direkt. (https://www.reddit.com/r/selfhosted/comments/sopt9u/alternative_to_syncthing_with_open_source_ios_app/)
   <span style="color: yellow;">Information</span>: Backups der Server-Konfiguration sollte einfach möglich sein. ([https://forum.syncthing.net/t/how-to-backup-syncthing-configuration-and-database/6844/8](https://forum.syncthing.net/t/how-to-backup-syncthing-configuration-and-database/6844/8 "smartCard-inline") )
   Beispiel Docker Compose file für syncthing:
 ```

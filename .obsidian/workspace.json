@@ -4,11 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e15c35e3318ed481",
+        "id": "47b52bd4b0eefed6",
         "type": "tabs",
         "children": [
           {
-            "id": "c2bff13b29a5fa4b",
+            "id": "cbf5fd2fc76fed1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FileHosting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "191ae4be228e3878",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware Setup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d9134c94765840cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -128,29 +153,55 @@
                 "file": "FileHosting.md"
               }
             }
+          },
+          {
+            "id": "8d52c3420c415e96",
+            "type": "leaf",
+            "state": {
+              "type": "mathpad-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "41c65df6bbbcc6d2",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "mathpad:Open Mathpad": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c2bff13b29a5fa4b",
+  "active": "d9134c94765840cd",
   "lastOpenFiles": [
+    "Hardware Setup.md",
     "Backups.md",
-    "ServerOS.md",
     "FileHosting.md",
-    "Surveillance.md"
+    "Surveillance.md",
+    "ServerOS.md",
+    "Pasted Image 20230708221733_419.png",
+    "Excalidraw/Drawing 2023-07-08 22.17.03.excalidraw.md",
+    "Untitled.md",
+    "Untitled.canvas",
+    "Excalidraw",
+    "Untitled"
   ]
 }
