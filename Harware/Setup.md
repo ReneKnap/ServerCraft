@@ -2,7 +2,7 @@
 - Support für IOMMU durch das Motherboard für das Passthrough von PCIe-Geräten.
 - Evtl. QuickSync bei Intel CPU prüfen.
 
-Setup Tobias:
+## Setup Tobias:
 - 2x 6TB HDD
 - evtl. eine dedizierte HDD für Backups von Renes Server
 - 2x 512GB SSD
@@ -11,7 +11,8 @@ Setup Tobias:
 - 16GB DDR4-2400
 - HBA SAS PCIe-Erweiterungskarte LSI SAS9220-8i IT-Mode
 
-Setup Rene:
+## Setup Rene: 
+[[Angebote Rene]]
 - 3x HDD (eine dedizierte für Surveillance-Videos)
 - evtl. eine dedizierte HDD für Backups von Tobias Server
 - 2x / 4x SSD (evtl. dedizierter Cache für Surveillance)
@@ -20,3 +21,4 @@ Setup Rene:
 - 16GB DDR?-2400
 - Bei Virtualisierung HBA von z.B. von LSI (kann von Tobias übernommen werden.)
 - PoE-Switch für PoE-Kameras
+
