@@ -9,3 +9,4 @@ The following two cards are one of the most found cards on ebay and will work ju
  - LSI 9211-8i: ![[LSISAS9211-8i_UG_v1-1.pdf]](https://www.broadcom.com/support/knowledgebase/1211161498134/lsi-sas-hba-os-support-list)
  
 A general overview over the LSI hardware can be found here: (https://www.broadcom.com/support/knowledgebase/1211161498134/lsi-sas-hba-os-support-list)
+
