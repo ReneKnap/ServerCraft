@@ -18,3 +18,16 @@ First install sudo on proxmox if not already done:
 Then add the new user you want to add:
 `adduser <username>`
 Now you can add the user to the users table in your proxmox GUI, too. Then assign the permissions your new user shall have.
+
+# Startup / Shutdown schedule
+Source: https://192.168.50.40:8006/pve-docs/chapter-pct.html#pct_startup_and_shutdown
+The startup and shutdown schedule of VMs and containers that shall start automatically at boot can be defined in their options.
+The order of the startup / shutdown schedule can be set there. The VM / container with the lowest number will start up at first and shut down at last.
+If you have additionally processes that take time after the start up of one of the first VMs / containers to startup like network shares, you can add a time delay after startup. The VM /  container that is scheduled after this will wait for the given amount of time to startup. This way it can be ensured that specific processes have time to execute after startup.
+
+# Schedule a system sleep period
+If the server should not run all the time a sleep phase can be scheduled. This can be done via this command:
+```
+# m h dom mon dow command
+30 00 * * * /usr/sbin/rtcwake -m off -s <sleep_time_in_seconds>
+```
