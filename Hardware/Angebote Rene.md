@@ -260,3 +260,33 @@
 	- 2 x M.2 Steckplätze
 	- 6 x SATA-Ports 
 
+#test
+
+
+```dataviewjs
+function calcTime(targetDateString) { 
+	let targetDate = new Date(targetDateString); 
+
+	let now = new Date();
+	let diff = targetDate - now; 
+	if (diff < 0) { return "Abgelaufen"}; 
+	
+
+	let sec = Math.floor(diff / 1000);
+
+	let day = Math.floor(sec / 86400);
+	sec -= day * 86400;
+	let hour = Math.floor(sec / 3600);
+	sec -= hour * 3600;
+	let min = Math.floor(sec / 60);
+	sec -= min * 60;
+
+	let result = day + " Tage " + hour + ":" + String(min).padStart(2, '0');
+	
+	return result;
+}
+
+dv.table(["Name", "Auktionsende"], dv.current().file.lists.where(l => !l.parent && l.header == "[[Hardware/Angebote Rene.md#Angebote Gebraucht Auktion|Angebote Rene > Angebote Gebraucht Auktion]]" ).map(b => [b.text, calcTime(b.children[0].children[2].text.substring(17, 33))]))
+```
+
+
